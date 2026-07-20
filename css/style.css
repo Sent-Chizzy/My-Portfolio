@@ -1,0 +1,273 @@
+/* --------------------
+   RESET
+--------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* --------------------
+   VARIABLES
+--------------------- */
+
+:root{
+
+    --background:#0f172a;
+    --card:#1e293b;
+    --primary:#3b82f6;
+    --secondary:#60a5fa;
+    --text:#ffffff;
+    --paragraph:#cbd5e1;
+
+}
+
+
+/* --------------------
+   BODY
+--------------------- */
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+/* --------------------
+   NAVBAR
+--------------------- */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:25px 10%;
+
+}
+
+.logo{
+
+    color:var(--primary);
+
+    font-size:30px;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:40px;
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--primary);
+
+}
+
+
+/* --------------------
+   HERO
+--------------------- */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px 10%;
+
+}
+
+.hero-text{
+
+    width:55%;
+
+}
+
+.intro{
+
+    color:var(--primary);
+
+    font-size:20px;
+
+    margin-bottom:15px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    margin-bottom:15px;
+
+}
+
+.hero h3{
+
+    color:var(--secondary);
+
+    margin-bottom:25px;
+
+}
+
+.description{
+
+    color:var(--paragraph);
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+
+/* --------------------
+   BUTTONS
+--------------------- */
+
+.buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+    text-decoration:none;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    background:#2563eb;
+
+}
+
+.btn-secondary{
+
+    border:2px solid var(--primary);
+
+    color:white;
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+}
+
+
+/* --------------------
+   PROFILE
+--------------------- */
+
+.profile-image{
+
+    width:330px;
+
+    height:330px;
+
+    border-radius:40%;
+
+    object-fit:contain;
+
+    border:3px solid var(--primary);
+
+    box-shadow:0 0 25px rgba(59,130,246,.35);
+
+}
+
+.log img{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:40%;
+
+    object-fit:cover;
+
+    border:0px solid var(--primary);
+
+    box-shadow:0 0 0 0;
+
+}
+
+/* --------------------
+   HIGHLIGHTS
+--------------------- */
+
+.highlights{
+
+    margin-top:35px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.highlights span{
+
+    background:var(--card);
+
+    color:var(--paragraph);
+
+    padding:12px 18px;
+
+    border-radius:8px;
+
+    border-left:4px solid var(--primary);
+
+    font-size:15px;
+
+}
