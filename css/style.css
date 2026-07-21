@@ -453,3 +453,183 @@ body{
     font-size: .9rem;
     font-weight: 600;
 }
+
+/* =========================
+   PAGE HERO
+========================= */
+
+.page-hero {
+    padding: 100px 10% 70px;
+    text-align: center;
+    background: #0f172a;
+}
+
+.page-hero h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.page-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-section {
+    padding: 80px 10%;
+    background: #111827;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.project-card {
+    background: #1f2937;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all .3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.35);
+}
+
+.project-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    transition: transform .4s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-category {
+    color: #3b82f6;
+    font-size: .85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.project-content h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.project-description {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   STACK TAGS
+========================= */
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.project-stack span {
+    background: #111827;
+    color: #3b82f6;
+    border: 1px solid #3b82f6;
+    padding: 7px 14px;
+    border-radius: 30px;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.project-links {
+    margin-top: auto;
+}
+
+.project-button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #3b82f6;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.project-button:hover {
+    background: #2563eb;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .projects-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero h1 {
+        font-size: 2.2rem;
+    }
+
+}
+
+.project-content h4{
+
+    color:#60a5fa;
+
+    font-weight:500;
+
+    margin-top:-8px;
+
+    margin-bottom:20px;
+
+}
