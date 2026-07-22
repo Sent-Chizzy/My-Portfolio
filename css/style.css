@@ -633,3 +633,260 @@ body{
     margin-bottom:20px;
 
 }
+
+/* =========================
+   JOURNEY LAYOUT
+========================= */
+
+.journey-section{
+
+    padding:0px 10%;
+    background:#0f172a;
+    padding-bottom: 50px;
+
+}
+
+.journey-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:50px;
+
+    align-items:start;
+
+}
+
+/* LEFT COLUMN */
+
+.journey-column{
+
+    width:100%;
+
+}
+
+/* RIGHT COLUMN */
+
+.journey-sidebar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+/* Timeline */
+
+.timeline{
+
+    margin-top:50px;
+
+    position:relative;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:100px;
+
+    top:0;
+
+    bottom:0;
+
+    width:3px;
+
+    background:#3b82f6;
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    gap:40px;
+
+    margin-bottom:45px;
+
+}
+
+.timeline-year{
+
+    width:80px;
+
+    color:#3b82f6;
+
+    font-weight:bold;
+
+    text-align:right;
+
+}
+
+.timeline-content{
+
+    flex:1;
+
+    background:#1f2937;
+
+    padding:25px;
+
+    border-left:4px solid #3b82f6;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.timeline-content:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* Core Attributes */
+
+.attributes-list{
+
+    list-style:none;
+
+    margin-top:15px;
+
+}
+
+.attributes-list li{
+
+    color:#cbd5e1;
+
+    padding:10px 0;
+
+    border-bottom:1px solid #374151;
+
+}
+
+.attributes-list li:last-child{
+
+    border:none;
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.journey-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* =========================
+   CORE VALUES
+========================= */
+
+.value-item{
+
+    margin-top:25px;
+
+    padding-top:20px;
+
+    border-top:1px solid #374151;
+
+}
+
+.value-item:first-of-type{
+
+    margin-top:20px;
+
+    border-top:none;
+
+    padding-top:0;
+
+}
+
+.value-item h4{
+
+    color:#60a5fa;
+
+    margin-bottom:10px;
+
+    font-size:1rem;
+
+}
+
+.value-item p{
+
+    color:#cbd5e1;
+
+    line-height:1.7;
+
+    font-size:.95rem;
+
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-mini{
+
+    margin-top:5px;
+    margin-left: 140px;
+
+}
+
+.education-list{
+
+    margin-top:-50px;
+
+}
+
+.education-item{
+
+    padding:10px 0;
+
+    border-bottom:1px solid #374151;
+
+}
+
+.education-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.education-item h3{
+
+    color:#ffffff;
+
+    font-size:1.05rem;
+
+    margin-bottom:8px;
+
+}
+
+.education-item p{
+
+    color:#94a3b8;
+
+    margin-bottom:6px;
+
+}
+
+.education-item span{
+
+    color:#3b82f6;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
